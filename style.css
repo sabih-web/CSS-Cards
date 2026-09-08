@@ -1,0 +1,220 @@
+/* -----------------------------
+   RESET
+----------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -----------------------------
+   BODY
+----------------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* -----------------------------
+   HEADER
+----------------------------- */
+
+header {
+    width: 100%;
+    height: 115px;
+
+    background-color: #d50068;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+
+    font-size: 62px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* -----------------------------
+   CARDS CONTAINER
+----------------------------- */
+
+.cards-container {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 36px;
+}
+
+
+/* -----------------------------
+   CARD
+----------------------------- */
+
+.card {
+    width: 305px;
+
+    background-color: #eeeeee;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    flex-shrink: 0;
+}
+
+
+/* -----------------------------
+   CARD IMAGE
+----------------------------- */
+
+.card img {
+    display: block;
+
+    width: 100%;
+    height: 205px;
+
+    object-fit: cover;
+}
+
+
+/* -----------------------------
+   CARD CONTENT
+----------------------------- */
+
+.card-content {
+    padding: 15px;
+}
+
+
+.card-content h2 {
+    font-size: 26px;
+    font-weight: 700;
+
+    color: #111111;
+
+    margin-bottom: 9px;
+}
+
+
+.card-content p {
+    color: #666666;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-bottom: 14px;
+}
+
+
+/* -----------------------------
+   BUTTON
+----------------------------- */
+
+.card-content button {
+    background-color: #333333;
+
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 9px 17px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: #222222;
+}
+
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+----------------------------- */
+
+
+/* Tablets */
+@media screen and (max-width: 1000px) {
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    .cards-container {
+        width: 90%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+
+    header {
+        height: auto;
+
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+
+        line-height: 1.2;
+    }
+
+
+    .cards-container {
+        width: 90%;
+
+        margin: 30px auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+    }
+
+
+    .card {
+        width: 100%;
+        max-width: 310px;
+    }
+
+
+    .card img {
+        height: 205px;
+    }
+}
